@@ -1,21 +1,19 @@
 public class AddClass{
-    // Щонайменше дві статичні змінні класу
     public static String Dealer;
     public static int year;
 
-    // Статичний блок ініціалізації для іншої статичної змінної
     static {
         Dealer = "BMW";
     }
 
-    // Перший статичний метод, використовує усі статичні змінні
+    // Перший статичний метод, використовує усі статичні параметри
     public static void setYear(int carYear) {
         year = carYear;
         System.out.println("dealer: " + Dealer);
         System.out.println("Year: " + year);
     }
 
-    // Другий статичний метод, використовує результати роботи першого методу
+    // Другий статичний метод, використовує результат роботи першого методу
     public static void printCarDetails() {
         setYear(2023);
         System.out.println("Car Details:");
